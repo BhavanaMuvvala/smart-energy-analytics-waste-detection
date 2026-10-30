@@ -1,0 +1,25 @@
+{
+  "seed": 20261022,
+  "meters": 20,
+  "days": 90,
+  "batches": 2000,
+  "interval_minutes": 15,
+  "expected_intervals": 172800,
+  "counts": {
+    "Plant": 1,
+    "Meter": 20,
+    "Machine": 21,
+    "MeterMachine": 20,
+    "Shift": 3,
+    "Tariff": 4,
+    "WeatherObservation": 8640,
+    "ProductionBatch": 2000,
+    "EnergyReading": 172800,
+    "MaintenanceEvent": 1,
+    "Recommendation": 7,
+    "MeterSummary": 1800,
+    "StateEvent": 4019
+  },
+  "ground_truth_count": 8,
+  "source": "fully synthetic; no external datasets"
+}

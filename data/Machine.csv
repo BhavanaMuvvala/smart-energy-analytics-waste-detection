@@ -1,0 +1,22 @@
+machine_id,plant_id,name,rated_kw,status
+MCH-PLT-001-001,PLT-001,Assembly Machine 1,15.5,active
+MCH-PLT-001-002,PLT-001,Assembly Machine 2,19.0,active
+MCH-PLT-001-003,PLT-001,Assembly Machine 3,22.5,active
+MCH-PLT-001-004,PLT-001,Assembly Machine 4,26.0,active
+MCH-PLT-001-005,PLT-001,Assembly Machine 5,29.5,active
+MCH-PLT-001-006,PLT-001,Assembly Machine 6,12.0,active
+MCH-PLT-001-007,PLT-001,Assembly Machine 7,15.5,active
+MCH-PLT-001-008,PLT-001,Assembly Machine 8,19.0,active
+MCH-PLT-001-009,PLT-001,Assembly Machine 9,22.5,active
+MCH-PLT-001-010,PLT-001,Assembly Machine 10,26.0,active
+MCH-PLT-001-011,PLT-001,Assembly Machine 11,29.5,active
+MCH-PLT-001-012,PLT-001,Assembly Machine 12,12.0,active
+MCH-PLT-001-013,PLT-001,Assembly Machine 13,15.5,active
+MCH-PLT-001-014,PLT-001,Assembly Machine 14,19.0,active
+MCH-PLT-001-015,PLT-001,Assembly Machine 15,22.5,active
+MCH-PLT-001-016,PLT-001,Assembly Machine 16,26.0,active
+MCH-PLT-001-017,PLT-001,Assembly Machine 17,29.5,active
+MCH-PLT-001-018,PLT-001,Assembly Machine 18,12.0,active
+MCH-PLT-001-019,PLT-001,Assembly Machine 19,15.5,active
+MCH-PLT-001-020,PLT-001,Assembly Machine 20,19.0,active
+MCH-PLT-001-021,PLT-001,Assembly Machine 21,22.5,active

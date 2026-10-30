@@ -1,0 +1,4 @@
+shift_id,plant_id,name,start_hour,end_hour
+SHF-1,PLT-001,Morning,6,14
+SHF-2,PLT-001,Evening,14,22
+SHF-3,PLT-001,Night,22,6

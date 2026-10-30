@@ -1,0 +1,21 @@
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Temporary reproducibility datasets
+data_run1/
+data_run2/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Streamlit local settings
+.streamlit/secrets.toml

@@ -1,0 +1,9 @@
+issue_type,record_id,meter_id,timestamp,expected_action
+meter_gap,ENG-MTR-PLT-001-001-20260101T023000Z,MTR-PLT-001-001,2026-01-01T02:30:00+00:00,flag_missing_interval
+meter_total_mismatch,SUM-MTR-PLT-001-001-2026-01-03,MTR-PLT-001-001,2026-01-03,reconcile_meter_total
+peak_spike,ENG-MTR-PLT-001-002-20260102T060000Z,MTR-PLT-001-002,2026-01-02T06:00:00+00:00,investigate_and_correct
+high_idle,ENG-MTR-PLT-001-003-20260103T143000Z,MTR-PLT-001-003,2026-01-03T14:30:00+00:00,investigate_and_correct
+unit_confusion,ENG-MTR-PLT-001-004-20260105T040000Z,MTR-PLT-001-004,2026-01-05T04:00:00+00:00,investigate_and_correct
+hierarchy_violation,ENG-MTR-PLT-001-005-20260106T173000Z,MTR-PLT-001-005,2026-01-06T17:30:00+00:00,investigate_and_correct
+duplicate_reading,ENG-MTR-PLT-001-006-20260108T070000Z,MTR-PLT-001-006,2026-01-08T07:00:00+00:00,deduplicate
+tariff_timezone_mismatch,ENG-MTR-PLT-001-007-20260109T080000Z,MTR-PLT-001-007,2026-01-09T08:00:00+00:00,investigate_and_correct

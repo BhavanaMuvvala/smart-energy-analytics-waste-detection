@@ -1,0 +1,58 @@
+[
+  {
+    "issue_type": "meter_gap",
+    "record_id": "ENG-MTR-PLT-001-001-20260101T023000Z",
+    "meter_id": "MTR-PLT-001-001",
+    "timestamp": "2026-01-01T02:30:00+00:00",
+    "expected_action": "flag_missing_interval"
+  },
+  {
+    "issue_type": "meter_total_mismatch",
+    "record_id": "SUM-MTR-PLT-001-001-2026-01-03",
+    "meter_id": "MTR-PLT-001-001",
+    "timestamp": "2026-01-03",
+    "expected_action": "reconcile_meter_total"
+  },
+  {
+    "issue_type": "peak_spike",
+    "record_id": "ENG-MTR-PLT-001-002-20260102T060000Z",
+    "meter_id": "MTR-PLT-001-002",
+    "timestamp": "2026-01-02T06:00:00+00:00",
+    "expected_action": "investigate_and_correct"
+  },
+  {
+    "issue_type": "high_idle",
+    "record_id": "ENG-MTR-PLT-001-003-20260103T143000Z",
+    "meter_id": "MTR-PLT-001-003",
+    "timestamp": "2026-01-03T14:30:00+00:00",
+    "expected_action": "investigate_and_correct"
+  },
+  {
+    "issue_type": "unit_confusion",
+    "record_id": "ENG-MTR-PLT-001-004-20260105T040000Z",
+    "meter_id": "MTR-PLT-001-004",
+    "timestamp": "2026-01-05T04:00:00+00:00",
+    "expected_action": "investigate_and_correct"
+  },
+  {
+    "issue_type": "hierarchy_violation",
+    "record_id": "ENG-MTR-PLT-001-005-20260106T173000Z",
+    "meter_id": "MTR-PLT-001-005",
+    "timestamp": "2026-01-06T17:30:00+00:00",
+    "expected_action": "investigate_and_correct"
+  },
+  {
+    "issue_type": "duplicate_reading",
+    "record_id": "ENG-MTR-PLT-001-006-20260108T070000Z",
+    "meter_id": "MTR-PLT-001-006",
+    "timestamp": "2026-01-08T07:00:00+00:00",
+    "expected_action": "deduplicate"
+  },
+  {
+    "issue_type": "tariff_timezone_mismatch",
+    "record_id": "ENG-MTR-PLT-001-007-20260109T080000Z",
+    "meter_id": "MTR-PLT-001-007",
+    "timestamp": "2026-01-09T08:00:00+00:00",
+    "expected_action": "investigate_and_correct"
+  }
+]

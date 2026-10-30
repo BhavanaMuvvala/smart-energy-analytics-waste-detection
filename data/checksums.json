@@ -1,0 +1,16 @@
+{
+  "EnergyReading.csv": "efd069f27fccc8b2f24e80d1e4c70afcd65f6579af7edfab4ab36052a86db98d",
+  "ground_truth.csv": "2ab448c24be4713439d1b90e9c2c4a60321e4ca44fb6a73d01c84d177d41ccea",
+  "Machine.csv": "371d6d765398e8ee4e969f9c88f259a2413834b40cccde3adef0d611c806b6b9",
+  "MaintenanceEvent.csv": "329695631ba138743eb9f5517f6ef18de8170e749f902beda163c012b0e8fade",
+  "Meter.csv": "125ad7c2f4b1ca231b0833e86853bd8bc8713eb2c2516036aba93fa7c4d79f56",
+  "MeterMachine.csv": "ad0dddf0aad10687931220c25ac580ed60585a4e052e8ee1a5b58ad1ee784d37",
+  "MeterSummary.csv": "60a746c32ca6265a187f74ea447f497fce514bcf895327272cbacee268e75323",
+  "Plant.csv": "a521c03e41ff7fcdd0fdd76687e19e4957f182124df8f83909f3ecadbe9ac2a3",
+  "ProductionBatch.csv": "4570ccd8217e2571da81f25735b490c85339033ea0b7d0f3a58078cfb0559d79",
+  "Recommendation.csv": "476e2e1348d59ba1d5fda738137c9613435026aaa09101258e448b4c2e7750d5",
+  "Shift.csv": "c279ab37a8526c72f138cc86fbd524d879bef2774971cc5540f977a4ae98b7e4",
+  "StateEvent.csv": "68ffb4fd643c2b63d6a8d1765fe94ad6b67faa8b31a7aeefee9db8c2d932eab1",
+  "Tariff.csv": "855512cc83fbb9fea0693769129908eeba08df09f8a9f04e6c40e59ae5126ac0",
+  "WeatherObservation.csv": "ff77252490baf9be8c1394a1fac4b7296551745538a93fefb49ea004b9398975"
+}
