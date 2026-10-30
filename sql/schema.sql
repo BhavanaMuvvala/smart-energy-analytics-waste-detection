@@ -7,7 +7,18 @@ CREATE TABLE IF NOT EXISTS Shift(shift_id TEXT PRIMARY KEY,plant_id TEXT NOT NUL
 CREATE TABLE IF NOT EXISTS Tariff(tariff_id TEXT PRIMARY KEY,plant_id TEXT NOT NULL REFERENCES Plant(plant_id),start_hour INTEGER NOT NULL,end_hour INTEGER NOT NULL,rate_per_kwh REAL NOT NULL CHECK(rate_per_kwh>=0),timezone TEXT NOT NULL,effective_from TEXT NOT NULL,effective_to TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS WeatherObservation(weather_id TEXT PRIMARY KEY,plant_id TEXT NOT NULL REFERENCES Plant(plant_id),timestamp TEXT NOT NULL,temperature_c REAL NOT NULL);
 CREATE TABLE IF NOT EXISTS ProductionBatch(batch_id TEXT PRIMARY KEY,machine_id TEXT NOT NULL REFERENCES Machine(machine_id),shift_id TEXT NOT NULL REFERENCES Shift(shift_id),start_at TEXT NOT NULL,end_at TEXT NOT NULL,output_units REAL NOT NULL,status TEXT NOT NULL,CHECK(end_at>start_at));
-CREATE TABLE IF NOT EXISTS EnergyReading(reading_row_id INTEGER PRIMARY KEY,reading_id TEXT NOT NULL,meter_id TEXT NOT NULL REFERENCES Meter(meter_id),machine_id TEXT NOT NULL REFERENCES Machine(machine_id),timestamp TEXT NOT NULL,power_kw REAL NOT NULL,energy_kwh REAL NOT NULL,state TEXT NOT NULL,batch_id TEXT REFERENCES ProductionBatch(batch_id),issue_type TEXT);
+CREATE TABLE IF NOT EXISTS EnergyReading (
+    reading_row_id INTEGER PRIMARY KEY,
+    reading_id TEXT NOT NULL,
+    meter_id TEXT NOT NULL REFERENCES Meter(meter_id),
+    machine_id TEXT NOT NULL REFERENCES Machine(machine_id),
+    timestamp TEXT NOT NULL,
+    power_kw REAL NOT NULL CHECK (power_kw >= 0),
+    energy_kwh REAL NOT NULL CHECK (energy_kwh >= 0),
+    state TEXT NOT NULL,
+    batch_id TEXT REFERENCES ProductionBatch(batch_id),
+    applied_tariff_id TEXT REFERENCES Tariff(tariff_id)
+);
 CREATE TABLE IF NOT EXISTS MaintenanceEvent(event_id TEXT PRIMARY KEY,machine_id TEXT NOT NULL REFERENCES Machine(machine_id),timestamp TEXT NOT NULL,event_type TEXT NOT NULL,details TEXT);
 CREATE TABLE IF NOT EXISTS Recommendation(recommendation_id TEXT PRIMARY KEY,meter_id TEXT NOT NULL REFERENCES Meter(meter_id),issue_type TEXT NOT NULL,baseline_kwh REAL NOT NULL,expected_savings_kwh REAL NOT NULL,rate_per_kwh REAL NOT NULL,expected_savings_cost REAL NOT NULL,evidence_id TEXT NOT NULL,status TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS MeterSummary(summary_id TEXT PRIMARY KEY,meter_id TEXT NOT NULL REFERENCES Meter(meter_id),day TEXT NOT NULL,reported_kwh REAL NOT NULL);
